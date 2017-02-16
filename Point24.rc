@@ -1,0 +1,323 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Point24.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Point24.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Point24"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "速算24点 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权归Elc所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_POINT24_DIALOG DIALOGEX 0, 0, 375, 206
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "24点游戏"
+MENU IDR_MENU
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "发牌",IDC_START,2,97,38,14
+    EDITTEXT        IDC_EDIT1,91,97,70,13,ES_READONLY
+    PUSHBUTTON      "退出游戏",IDOK,204,97,38,14
+    PUSHBUTTON      "输入算式",IDC_INPUT,47,97,37,14,BS_TOP
+    PUSHBUTTON      "计算",IDC_CALC,168,97,29,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    48,116,166,14,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO,288,17,48,44,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "难度级别:",IDC_STATIC,287,5,49,8
+    LTEXT           "耗时标识：",IDC_STATIC,6,118,51,8
+    LTEXT           "当前得分:",IDC_STATIC,288,37,37,8
+    LTEXT           "",IDC_CUR_SCORE,326,37,18,8
+    LTEXT           "历史记录:",IDC_STATIC,288,50,50,8
+    LTEXT           "",IDC_STATIC,254,50,18,8
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,272,63,72,65
+    LTEXT           "1.单击“发牌”按钮，游戏开始，系统将会发出4张扑克牌。",
+                    IDC_STATIC,9,147,241,8
+    LTEXT           "2.要求用户利用扑克牌显示的数字，通过加减乘除运算，以最快的速度得出24（可以使用括",
+                    IDC_STATIC,10,161,326,8
+    LTEXT           "号）。然后在文本框中写好表达式，接着点击“计算”按钮。",
+                    IDC_STATIC,11,175,322,8
+    LTEXT           "3.这是系统会计算输入表达式的结果，告诉用户是对还是错了，并在历史记录里显示。",
+                    IDC_STATIC,11,189,308,8
+    LTEXT           "帮助：",IDC_STATIC,10,133,25,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Point24 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Point24\0"
+            VALUE "LegalCopyright", "版权所有 (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Point24.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Point24 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_POINT24_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 344
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BACK                BITMAP  DISCARDABLE     "res\\back.bmp"
+IDB_FP1                 BITMAP  DISCARDABLE     "res\\fp1.bmp"
+IDB_FP2                 BITMAP  DISCARDABLE     "res\\fp2.bmp"
+IDB_FP3                 BITMAP  DISCARDABLE     "res\\fp3.bmp"
+IDB_FP4                 BITMAP  DISCARDABLE     "res\\fp4.bmp"
+IDB_FP5                 BITMAP  DISCARDABLE     "res\\fp5.bmp"
+IDB_FP6                 BITMAP  DISCARDABLE     "res\\fp6.bmp"
+IDB_FP7                 BITMAP  DISCARDABLE     "res\\fp7.bmp"
+IDB_FP8                 BITMAP  DISCARDABLE     "res\\fp8.bmp"
+IDB_FP9                 BITMAP  DISCARDABLE     "res\\fp9.bmp"
+IDB_FP10                BITMAP  DISCARDABLE     "res\\fp10.bmp"
+IDB_FP11                BITMAP  DISCARDABLE     "res\\fp11.bmp"
+IDB_FP12                BITMAP  DISCARDABLE     "res\\fp12.bmp"
+IDB_FP13                BITMAP  DISCARDABLE     "res\\fp13.bmp"
+IDB_HT1                 BITMAP  DISCARDABLE     "res\\ht1.bmp"
+IDB_HT2                 BITMAP  DISCARDABLE     "res\\ht2.bmp"
+IDB_HT3                 BITMAP  DISCARDABLE     "res\\ht3.bmp"
+IDB_HT4                 BITMAP  DISCARDABLE     "res\\ht4.bmp"
+IDB_HT5                 BITMAP  DISCARDABLE     "res\\ht5.bmp"
+IDB_HT6                 BITMAP  DISCARDABLE     "res\\ht6.bmp"
+IDB_HT7                 BITMAP  DISCARDABLE     "res\\ht7.bmp"
+IDB_HT8                 BITMAP  DISCARDABLE     "res\\ht8.bmp"
+IDB_HT9                 BITMAP  DISCARDABLE     "res\\ht9.bmp"
+IDB_HT10                BITMAP  DISCARDABLE     "res\\ht10.bmp"
+IDB_HT11                BITMAP  DISCARDABLE     "res\\ht11.bmp"
+IDB_HT12                BITMAP  DISCARDABLE     "res\\ht12.bmp"
+IDB_HT13                BITMAP  DISCARDABLE     "res\\ht13.bmp"
+IDB_HTT1                BITMAP  DISCARDABLE     "res\\htt1.bmp"
+IDB_HTT2                BITMAP  DISCARDABLE     "res\\htt2.bmp"
+IDB_HTT3                BITMAP  DISCARDABLE     "res\\htt3.bmp"
+IDB_HTT4                BITMAP  DISCARDABLE     "res\\htt4.bmp"
+IDB_HTT5                BITMAP  DISCARDABLE     "res\\htt5.bmp"
+IDB_HTT6                BITMAP  DISCARDABLE     "res\\htt6.bmp"
+IDB_HTT7                BITMAP  DISCARDABLE     "res\\htt7.bmp"
+IDB_HTT8                BITMAP  DISCARDABLE     "res\\htt8.bmp"
+IDB_HTT9                BITMAP  DISCARDABLE     "res\\htt9.bmp"
+IDB_HTT10               BITMAP  DISCARDABLE     "res\\htt10.bmp"
+IDB_HTT11               BITMAP  DISCARDABLE     "res\\htt11.bmp"
+IDB_HTT12               BITMAP  DISCARDABLE     "res\\htt12.bmp"
+IDB_HTT13               BITMAP  DISCARDABLE     "res\\htt13.bmp"
+IDB_MH1                 BITMAP  DISCARDABLE     "res\\mh1.bmp"
+IDB_MH2                 BITMAP  DISCARDABLE     "res\\mh2.bmp"
+IDB_MH3                 BITMAP  DISCARDABLE     "res\\mh3.bmp"
+IDB_MH4                 BITMAP  DISCARDABLE     "res\\mh4.bmp"
+IDB_MH5                 BITMAP  DISCARDABLE     "res\\mh5.bmp"
+IDB_MH6                 BITMAP  DISCARDABLE     "res\\mh6.bmp"
+IDB_MH7                 BITMAP  DISCARDABLE     "res\\mh7.bmp"
+IDB_MH8                 BITMAP  DISCARDABLE     "res\\mh8.bmp"
+IDB_MH9                 BITMAP  DISCARDABLE     "res\\mh9.bmp"
+IDB_MH10                BITMAP  DISCARDABLE     "res\\mh10.bmp"
+IDB_MH11                BITMAP  DISCARDABLE     "res\\mh11.bmp"
+IDB_MH12                BITMAP  DISCARDABLE     "res\\mh12.bmp"
+IDB_MH13                BITMAP  DISCARDABLE     "res\\mh13.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "游戏"
+    BEGIN
+        MENUITEM "开始    &S",                  IDC_START
+        MENUITEM "结束    &E",                  IDOK
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于  速算24点",              IDD_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Point24(&A)..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_START               "开始游戏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDCANCEL                "结束游戏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDD_ABOUT               "版本"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Point24.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
